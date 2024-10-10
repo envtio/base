@@ -2,8 +2,8 @@ import { sqsQueue } from "@cdktf/provider-aws";
 // import { IResolveContext, Lazy, IResolvable } from "cdktf";
 import { Construct } from "constructs";
 // import { Statement } from "iam-floyd";
-import { SqsQueueConfig } from "./queue-config.generated";
 import { AwsBeaconBase, IAwsBeacon, AwsBeaconProps } from "..";
+import { SqsQueueConfig } from "./queue-config.generated";
 // import { ServiceRole, IServiceRole } from "../iam";
 
 export interface QueueProps extends AwsBeaconProps, SqsQueueConfig {

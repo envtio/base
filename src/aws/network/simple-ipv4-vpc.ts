@@ -8,6 +8,7 @@ import {
 } from "@cdktf/provider-aws";
 import { Fn, Lazy } from "cdktf";
 import { Construct } from "constructs";
+import { AwsBeaconBase, AwsBeaconProps } from "..";
 import { INetwork, NetworkOutputs } from "./network";
 import { PublicSubnet, PrivateSubnet, DataSubnet, ISubnet } from "./subnet";
 import {
@@ -15,7 +16,6 @@ import {
   DbSubnetGroup,
   ElastiCacheSubnetGroup,
 } from "./subnet-group";
-import { AwsBeaconBase, AwsBeaconProps } from "..";
 
 export enum NatGatewayOption {
   SINGLE_NAT_GATEWAY = "single-nat-gateway",

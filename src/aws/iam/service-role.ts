@@ -8,9 +8,9 @@ import {
 import { Lazy, IResolveContext } from "cdktf";
 import { Construct } from "constructs";
 import { Statement } from "iam-floyd";
+import { AwsBeaconBase, AwsBeaconProps } from "..";
 import { IManagedPolicy } from "./managed-policy";
 import { Policy } from "./policy";
-import { AwsBeaconBase, AwsBeaconProps } from "..";
 
 export interface IServiceRole {
   readonly name: string;
