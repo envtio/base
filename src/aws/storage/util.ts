@@ -1,6 +1,6 @@
 import { IConstruct } from "constructs";
-import { BucketOutputs } from "./bucket";
 import { AwsSpec, ArnFormat } from "..";
+import { BucketOutputs } from "./bucket";
 
 export function parseBucketArn(
   construct: IConstruct,

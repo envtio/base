@@ -6,9 +6,9 @@ import {
 import { Lazy } from "cdktf";
 import { Construct } from "constructs";
 // import { Statement } from "iam-floyd";
+import { AwsBeaconBase, IAwsBeacon, AwsBeaconProps } from "..";
 import { RuleConfig, TargetConfig, Schedule, EventPattern } from "./";
 import { mergeEventPattern, renderEventPattern } from "./util";
-import { AwsBeaconBase, IAwsBeacon, AwsBeaconProps } from "..";
 // import { ServiceRole, IServiceRole } from "../iam";
 
 export interface RuleProps extends AwsBeaconProps, RuleConfig {
